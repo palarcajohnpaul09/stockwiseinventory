@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EduBoost | Home</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-mortarboard-fill"></i> EduBoost</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/dashboard.html">Dashboard</a></li>
+          <li class="nav-item"><a class="btn btn-outline-secondary btn-sm" href="pages/login.html">Login</a></li>
+          <li class="nav-item"><a class="btn btn-brand btn-sm" href="pages/signup.html">Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container text-center text-lg-start">
+      <div class="row">
+        <div class="col-lg-7">
+          <h1 class="display-4 fw-bold">Learn Bootstrap. Build Beautiful Pages.</h1>
+          <p class="lead my-4">A friendly practice site for students to explore the grid, cards, forms, navbars and more.</p>
+          <a href="pages/signup.html" class="btn btn-brand btn-lg me-2">Get Started</a>
+          <a href="#features" class="btn btn-outline-light btn-lg">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Features -->
+  <section id="features" class="py-5">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Why Students Love It</h2>
+        <p class="text-muted">Simple building blocks to practice responsive design.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm card-hover text-center p-4">
+            <span class="feature-icon mx-auto mb-3"><i class="bi bi-phone"></i></span>
+            <h5>Responsive</h5>
+            <p class="text-muted mb-0">Resize your browser and watch the grid adapt.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm card-hover text-center p-4">
+            <span class="feature-icon mx-auto mb-3"><i class="bi bi-wifi-off"></i></span>
+            <h5>Works Offline</h5>
+            <p class="text-muted mb-0">Bootstrap, icons and images are all stored locally.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm card-hover text-center p-4">
+            <span class="feature-icon mx-auto mb-3"><i class="bi bi-code-slash"></i></span>
+            <h5>Easy to Edit</h5>
+            <p class="text-muted mb-0">Clean, organized code that is simple to customize.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="py-5 bg-white">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <img src="assets/images/students.jpg" class="img-fluid rounded-4 shadow" alt="Students studying together">
+        </div>
+        <div class="col-lg-6">
+          <h2 class="fw-bold">Learn by Doing</h2>
+          <p class="text-muted">Open the HTML files, change classes, and see what happens. Try swapping <code>col-md-4</code> for <code>col-md-6</code> or changing button colors.</p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Navbar, hero and footer</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Cards and grid layouts</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Forms, tables and progress bars</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses -->
+  <section id="courses" class="py-5">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Popular Courses</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm card-hover">
+            <img src="assets/images/laptop.jpg" class="card-img-top" alt="Laptop with code">
+            <div class="card-body">
+              <span class="badge bg-brand mb-2">Web</span>
+              <h5 class="card-title">HTML &amp; CSS Basics</h5>
+              <p class="card-text text-muted">Structure and style your first web page.</p>
+            </div>
+            <div class="card-footer bg-white border-0 pb-3"><a href="#" class="btn btn-outline-primary btn-sm">View Course</a></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm card-hover">
+            <img src="assets/images/library.jpg" class="card-img-top" alt="Library shelves">
+            <div class="card-body">
+              <span class="badge bg-brand mb-2">Design</span>
+              <h5 class="card-title">Bootstrap Layouts</h5>
+              <p class="card-text text-muted">Master the 12-column grid system.</p>
+            </div>
+            <div class="card-footer bg-white border-0 pb-3"><a href="#" class="btn btn-outline-primary btn-sm">View Course</a></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm card-hover">
+            <img src="assets/images/classroom.jpg" class="card-img-top" alt="Classroom">
+            <div class="card-body">
+              <span class="badge bg-brand mb-2">Project</span>
+              <h5 class="card-title">Build a Portfolio</h5>
+              <p class="card-text text-muted">Put it all together in a real project.</p>
+            </div>
+            <div class="card-footer bg-white border-0 pb-3"><a href="#" class="btn btn-outline-primary btn-sm">View Course</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 bg-white">
+    <div class="container py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <h2 class="fw-bold text-center mb-4">Contact Us</h2>
+          <form>
+            <div class="mb-3"><label class="form-label" for="cname">Name</label><input type="text" id="cname" class="form-control" placeholder="Your name"></div>
+            <div class="mb-3"><label class="form-label" for="cemail">Email</label><input type="email" id="cemail" class="form-control" placeholder="name@example.com"></div>
+            <div class="mb-3"><label class="form-label" for="cmsg">Message</label><textarea id="cmsg" class="form-control" rows="4"></textarea></div>
+            <button type="button" class="btn btn-brand w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <span>&copy; 2026 EduBoost. For learning purposes.</span>
+      <div class="d-flex gap-3 fs-5">
+        <a href="#" class="text-light" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-light" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="text-light" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
