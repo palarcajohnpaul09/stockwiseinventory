@@ -1,78 +1,210 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>EduBoost | Sign Up</title>
-  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
-  <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/css/bootstrap-icons.min.css" rel="stylesheet">
-  <link href="../assets/css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up | StockWise</title>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<body>
-  <div class="container-fluid">
-    <div class="row auth-wrapper">
-      <!-- Form side -->
-      <div class="col-lg-6 d-flex align-items-center justify-content-center py-5 order-2 order-lg-1">
-        <div class="w-100" style="max-width: 440px;">
-          <a href="../index.html" class="navbar-brand fw-bold fs-4 text-decoration-none text-dark d-block mb-4"><i class="bi bi-mortarboard-fill text-brand"></i> EduBoost</a>
-          <h3 class="fw-bold">Create your account</h3>
-          <p class="text-muted">It only takes a minute.</p>
 
-          <form>
-            <div class="row g-3 mb-3">
-              <div class="col-sm-6">
-                <label for="first" class="form-label">First name</label>
-                <input type="text" class="form-control" id="first" placeholder="Juan">
-              </div>
-              <div class="col-sm-6">
-                <label for="last" class="form-label">Last name</label>
-                <input type="text" class="form-control" id="last" placeholder="Dela Cruz">
-              </div>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="email" placeholder="name@example.com">
-            </div>
-            <div class="mb-3">
-              <label for="course" class="form-label">Course</label>
-              <select class="form-select" id="course">
-                <option selected>Choose...</option>
-                <option>Information Technology</option>
-                <option>Computer Science</option>
-                <option>Business</option>
-              </select>
-            </div>
-            <div class="row g-3 mb-3">
-              <div class="col-sm-6">
-                <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password">
-              </div>
-              <div class="col-sm-6">
-                <label for="confirm" class="form-label">Confirm password</label>
-                <input type="password" class="form-control" id="confirm">
-              </div>
-            </div>
-            <div class="form-check mb-4">
-              <input class="form-check-input" type="checkbox" id="terms">
-              <label class="form-check-label" for="terms">I agree to the <a href="#">Terms &amp; Conditions</a></label>
-            </div>
-            <a href="login.html" class="btn btn-brand w-100 py-2">Sign Up</a>
-          </form>
+<body class="bg-light">
 
-          <p class="text-center mt-4 mb-0">Already have an account? <a href="login.html">Login</a></p>
+    <div class="container min-vh-100 d-flex align-items-center justify-content-center py-5">
+
+        <div class="card border-0 shadow-lg rounded-4 p-4"
+             style="max-width: 500px; width: 100%;">
+
+            <!-- Logo -->
+            <div class="text-center mb-4">
+
+                <h2 class="text-success fw-bold">
+                    <i class="bi bi-box-seam"></i> StockWise
+                </h2>
+
+                <h5 class="fw-bold mt-3">Create Your Account</h5>
+
+                <p class="text-muted">
+                    Join StockWise and manage your inventory smarter.
+                </p>
+
+            </div>
+
+            <!-- Signup Form -->
+            <form id="signupForm">
+
+                <!-- Full Name -->
+                <div class="mb-3">
+
+                    <label class="form-label fw-semibold">
+                        Full Name
+                    </label>
+
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-person"></i>
+                        </span>
+
+                        <input type="text"
+                               class="form-control"
+                               id="fullname"
+                               placeholder="Enter your full name"
+                               required>
+                    </div>
+
+                </div>
+
+                <!-- Business Name -->
+                <div class="mb-3">
+
+                    <label class="form-label fw-semibold">
+                        Business Name
+                    </label>
+
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-shop"></i>
+                        </span>
+
+                        <input type="text"
+                               class="form-control"
+                               id="business"
+                               placeholder="Enter your business name"
+                               required>
+                    </div>
+
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3">
+
+                    <label class="form-label fw-semibold">
+                        Email Address
+                    </label>
+
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-envelope"></i>
+                        </span>
+
+                        <input type="email"
+                               class="form-control"
+                               id="email"
+                               placeholder="Enter your email"
+                               required>
+                    </div>
+
+                </div>
+
+                <!-- Password -->
+                <div class="mb-3">
+
+                    <label class="form-label fw-semibold">
+                        Password
+                    </label>
+
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-lock"></i>
+                        </span>
+
+                        <input type="password"
+                               class="form-control"
+                               id="password"
+                               placeholder="Create a password"
+                               minlength="8"
+                               required>
+                    </div>
+
+                    <small class="text-muted">
+                        Password must contain at least 8 characters.
+                    </small>
+
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="mb-3">
+
+                    <label class="form-label fw-semibold">
+                        Confirm Password
+                    </label>
+
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-shield-lock"></i>
+                        </span>
+
+                        <input type="password"
+                               class="form-control"
+                               id="confirmPassword"
+                               placeholder="Confirm your password"
+                               required>
+                    </div>
+
+                </div>
+
+                <!-- Terms -->
+                <div class="form-check mb-4">
+
+                    <input class="form-check-input"
+                           type="checkbox"
+                           id="terms"
+                           required>
+
+                    <label class="form-check-label" for="terms">
+                        I agree to the Terms and Conditions.
+                    </label>
+
+                </div>
+
+                <!-- Submit -->
+                <button type="submit"
+                        class="btn btn-success w-100 py-2 fw-semibold">
+
+                    Create Account
+                    <i class="bi bi-arrow-right"></i>
+
+                </button>
+
+            </form>
+
+            <!-- Login Link -->
+            <div class="text-center mt-4">
+
+                <p class="text-muted mb-0">
+                    Already have an account?
+
+                    <a href="login.html"
+                       class="text-success fw-bold text-decoration-none">
+                        Login
+                    </a>
+                </p>
+
+            </div>
+
+            <!-- Back Home -->
+            <div class="text-center mt-3">
+
+                <a href="../index.html"
+                   class="text-muted text-decoration-none small">
+
+                    <i class="bi bi-arrow-left"></i>
+                    Back to Home
+
+                </a>
+
+            </div>
+
         </div>
-      </div>
 
-      <!-- Image side -->
-      <div class="col-lg-6 auth-image signup d-flex align-items-end p-5 order-1 order-lg-2">
-        <div class="text-white">
-          <h2 class="fw-bold">Start learning today</h2>
-          <p class="mb-0">Join thousands of students building their skills.</p>
-        </div>
-      </div>
     </div>
-  </div>
-  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/stockwise.js"></script>
+
 </body>
 </html>

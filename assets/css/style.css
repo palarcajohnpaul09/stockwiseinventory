@@ -1,159 +1,78 @@
-/* =========================
-   STOCKWISE MAIN DESIGN
-========================= */
-
-:root {
-    --primary: #176b50;
-    --primary-dark: #10513c;
-    --light-bg: #f5f7f6;
-    --text-dark: #26332e;
+/* ========================= GENERAL STYLING ========================= */
+{ margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background-color: #f5f8f5; color: #333; }
+a { text-decoration: none; }
+:root { --primary-color: #198754; --dark-green: #146c43; --light-green: #e8f5ec; --background-color: #f5f8f5; }
+/* ========================= NAVIGATION BAR ========================= */
+.navbar { background-color: white; padding: 15px 0; }
+.navbar-brand { color: var(--primary-color); font-weight: bold; font-size: 25px; }
+.navbar-brand:hover { color: var(--dark-green); }
+.nav-link { color: #333; font-weight: 500; }
+.nav-link:hover { color: var(--primary-color); }
+/* ========================= BUTTONS ========================= */
+.btn-success { background-color: var(--primary-color); border-color: var(--primary-color); }
+.btn-success:hover { background-color: var(--dark-green); border-color: var(--dark-green); }
+/* ========================= HOMEPAGE ========================= */
+.hero-section { min-height: 550px; display: flex; align-items: center; background-color: var(--light-green); padding: 70px 0; }
+.hero-section h1 { font-size: 48px; font-weight: bold; color: #183d2b; }
+.hero-section p { font-size: 18px; line-height: 1.7; color: #555; }
+.section-title { font-weight: bold; color: #183d2b; margin-bottom: 20px; }
+/* ========================= FEATURE CARDS ========================= */
+.feature-card { background-color: white; padding: 30px; border-radius: 12px; text-align: center; height: 100%; box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06); transition: 0.3s; }
+.feature-card:hover { transform: translateY(-5px); }
+.feature-card i { font-size: 40px; color: var(--primary-color); margin-bottom: 15px; }
+/* ========================= LOGIN AND SIGNUP ========================= */
+.auth-section { min-height: 100vh; display: flex; align-items: center; justify-content: center; background-color: var(--background-color); padding: 30px 15px; }
+.auth-card { background-color: white; width: 100%; max-width: 450px; padding: 35px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); }
+.auth-card h2 { color: var(--primary-color); font-weight: bold; margin-bottom: 10px; }
+.auth-card .form-control { padding: 12px; border-radius: 8px; }
+.auth-card .btn { padding: 12px; font-weight: bold; }
+/* ========================= DASHBOARD LAYOUT ========================= */
+.dashboard-body { background-color: #f4f7f5; }
+.sidebar { background-color: #145c38; min-height: 100vh; padding: 25px 15px; }
+.sidebar h4 { color: white; font-weight: bold; margin-bottom: 30px; }
+.sidebar a { display: block; color: #e5f2e9; padding: 12px 15px; margin-bottom: 8px; border-radius: 8px; transition: 0.3s; }
+.sidebar a:hover, .sidebar a.active { background-color: #198754; color: white; }
+.dashboard-content { padding: 30px; }
+/* ========================= DASHBOARD CARDS ========================= */
+.stat-card { background-color: white; padding: 22px; border-radius: 12px; box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05); height: 100%; }
+.stat-card h6 { color: #777; margin-bottom: 12px; }
+.stat-card h3 { color: var(--primary-color); font-weight: bold; }
+/* ========================= TABLES ========================= */
+.table-container { background-color: white; padding: 20px; border-radius: 12px; box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05); }
+.table th { background-color: var(--light-green); color: #183d2b; }
+.table td, .table th { padding: 14px; vertical-align: middle; }
+/* ========================= FORMS AND MODALS ========================= */
+.form-control, .form-select { border-radius: 8px; padding: 10px; }
+.form-control:focus, .form-select:focus { border-color: var(--primary-color); box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.15); }
+.modal-content { border: none; border-radius: 12px; }
+/* ========================= ALERTS AND BADGES ========================= */
+.badge { padding: 7px 10px; border-radius: 6px; }
+.alert { border-radius: 8px; }
+/* ========================= FOOTER ========================= */
+footer { background-color: #145c38; color: white; padding: 25px 0; text-align: center; }
+/* ========================= RESPONSIVE DESIGN ========================= */
+@media (max-width: 768px) {
+.hero-section {
+    text-align: center;
+    padding: 50px 20px;
 }
 
-body {
-    background-color: var(--light-bg);
-    color: var(--text-dark);
-    font-family: Arial, sans-serif;
+.hero-section h1 {
+    font-size: 35px;
 }
 
-/* SIDEBAR */
+.dashboard-content {
+    padding: 15px;
+}
 
 .sidebar {
-    min-height: 100vh;
-    background-color: var(--primary-dark);
-    position: sticky;
-    top: 0;
+    min-height: auto;
 }
 
-.sidebar .nav-link {
-    color: #dcece5;
-    padding: 12px 15px;
-    border-radius: 8px;
-    margin-bottom: 5px;
-    transition: 0.3s;
+.auth-card {
+    padding: 25px;
 }
 
-.sidebar .nav-link:hover {
-    background-color: rgba(255,255,255,0.15);
-    color: white;
 }
 
-.sidebar .nav-link.active {
-    background-color: var(--primary);
-    color: white;
-}
-
-/* BRAND BUTTON */
-
-.btn-brand {
-    background-color: var(--primary);
-    border-color: var(--primary);
-    color: white;
-}
-
-.btn-brand:hover {
-    background-color: var(--primary-dark);
-    border-color: var(--primary-dark);
-    color: white;
-}
-
-.text-brand {
-    color: var(--primary);
-}
-
-/* CARDS */
-
-.card {
-    border-radius: 12px;
-}
-
-.stat-card {
-    border: none;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
-    position: relative;
-    overflow: hidden;
-}
-
-.stat-card .card-body {
-    padding: 22px;
-}
-
-.stat-card i {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    font-size: 28px;
-    opacity: 0.8;
-}
-
-/* TABLE */
-
-.table th {
-    font-size: 13px;
-    color: #64736c;
-    font-weight: 600;
-}
-
-.table td {
-    font-size: 14px;
-}
-
-/* BADGES */
-
-.status-good {
-    background-color: #d8f3e5;
-    color: #176b50;
-}
-
-.status-low {
-    background-color: #fff0d1;
-    color: #a66a00;
-}
-
-.status-expired {
-    background-color: #ffe0e0;
-    color: #bd3030;
-}
-
-/* FORECAST */
-
-.forecast-item {
-    margin-bottom: 18px;
-}
-
-.forecast-bar {
-    height: 9px;
-    background-color: #e7eeea;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.forecast-progress {
-    height: 100%;
-    background-color: var(--primary);
-    border-radius: 20px;
-}
-
-/* ALERTS */
-
-.alert-item {
-    border-left: 4px solid #e4a52c;
-    background-color: #fffaf0;
-    padding: 12px;
-    border-radius: 6px;
-    margin-bottom: 10px;
-}
-
-.expired-item {
-    border-left: 4px solid #d9534f;
-    background-color: #fff3f3;
-}
-
-/* RESPONSIVE */
-
-@media (max-width: 991px) {
-
-    .sidebar {
-        display: none;
-    }
-
-}
