@@ -8,7 +8,7 @@ A beginner-friendly website template for learning **Bootstrap 5.3.3**. It works 
 
 ---
 
-## Table of Contents
+##  Table of Contents
 
 1. [What is Bootstrap?](#1-what-is-bootstrap)
 2. [Quick Start](#2-quick-start)
