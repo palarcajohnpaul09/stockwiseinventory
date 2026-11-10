@@ -1,177 +1,539 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>EduBoost | Home</title>
-  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/css/bootstrap-icons.min.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StockWise | Dashboard</title>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-mortarboard-fill"></i> EduBoost</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-          <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="pages/dashboard.html">Dashboard</a></li>
-          <li class="nav-item"><a class="btn btn-outline-secondary btn-sm" href="pages/login.html">Login</a></li>
-          <li class="nav-item"><a class="btn btn-brand btn-sm" href="pages/signup.html">Sign Up</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<div class="container-fluid">
+    <div class="row">
 
-  <!-- Hero -->
-  <header class="hero">
-    <div class="container text-center text-lg-start">
-      <div class="row">
-        <div class="col-lg-7">
-          <h1 class="display-4 fw-bold">Learn Bootstrap. Build Beautiful Pages.</h1>
-          <p class="lead my-4">A friendly practice site for students to explore the grid, cards, forms, navbars and more.</p>
-          <a href="pages/signup.html" class="btn btn-brand btn-lg me-2">Get Started</a>
-          <a href="#features" class="btn btn-outline-light btn-lg">Learn More</a>
-        </div>
-      </div>
-    </div>
-  </header>
+        <!-- SIDEBAR -->
+        <aside class="col-lg-2 d-none d-lg-block sidebar p-3">
 
-  <!-- Features -->
-  <section id="features" class="py-5">
-    <div class="container py-4">
-      <div class="text-center mb-5">
-        <h2 class="fw-bold">Why Students Love It</h2>
-        <p class="text-muted">Simple building blocks to practice responsive design.</p>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow-sm card-hover text-center p-4">
-            <span class="feature-icon mx-auto mb-3"><i class="bi bi-phone"></i></span>
-            <h5>Responsive</h5>
-            <p class="text-muted mb-0">Resize your browser and watch the grid adapt.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow-sm card-hover text-center p-4">
-            <span class="feature-icon mx-auto mb-3"><i class="bi bi-wifi-off"></i></span>
-            <h5>Works Offline</h5>
-            <p class="text-muted mb-0">Bootstrap, icons and images are all stored locally.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow-sm card-hover text-center p-4">
-            <span class="feature-icon mx-auto mb-3"><i class="bi bi-code-slash"></i></span>
-            <h5>Easy to Edit</h5>
-            <p class="text-muted mb-0">Clean, organized code that is simple to customize.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+            <a href="../index.html"
+               class="text-white text-decoration-none fw-bold fs-4 d-block mb-4">
 
-  <!-- About -->
-  <section class="py-5 bg-white">
-    <div class="container py-4">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-6">
-          <img src="assets/images/students.jpg" class="img-fluid rounded-4 shadow" alt="Students studying together">
-        </div>
-        <div class="col-lg-6">
-          <h2 class="fw-bold">Learn by Doing</h2>
-          <p class="text-muted">Open the HTML files, change classes, and see what happens. Try swapping <code>col-md-4</code> for <code>col-md-6</code> or changing button colors.</p>
-          <ul class="list-unstyled">
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Navbar, hero and footer</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Cards and grid layouts</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Forms, tables and progress bars</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+                <i class="bi bi-box-seam-fill"></i>
+                StockWise
 
-  <!-- Courses -->
-  <section id="courses" class="py-5">
-    <div class="container py-4">
-      <div class="text-center mb-5">
-        <h2 class="fw-bold">Popular Courses</h2>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 border-0 shadow-sm card-hover">
-            <img src="assets/images/laptop.jpg" class="card-img-top" alt="Laptop with code">
-            <div class="card-body">
-              <span class="badge bg-brand mb-2">Web</span>
-              <h5 class="card-title">HTML &amp; CSS Basics</h5>
-              <p class="card-text text-muted">Structure and style your first web page.</p>
+            </a>
+
+            <div class="small text-uppercase text-white-50 mb-2">
+                Workspace
             </div>
-            <div class="card-footer bg-white border-0 pb-3"><a href="#" class="btn btn-outline-primary btn-sm">View Course</a></div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 border-0 shadow-sm card-hover">
-            <img src="assets/images/library.jpg" class="card-img-top" alt="Library shelves">
-            <div class="card-body">
-              <span class="badge bg-brand mb-2">Design</span>
-              <h5 class="card-title">Bootstrap Layouts</h5>
-              <p class="card-text text-muted">Master the 12-column grid system.</p>
+
+            <ul class="nav nav-pills flex-column gap-1">
+
+                <li>
+                    <a class="nav-link active" href="#overview">
+                        <i class="bi bi-grid me-2"></i>
+                        Overview
+                    </a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="#products">
+                        <i class="bi bi-boxes me-2"></i>
+                        Products
+                    </a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="#sales">
+                        <i class="bi bi-receipt me-2"></i>
+                        Sales Records
+                    </a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="#forecast">
+                        <i class="bi bi-graph-up-arrow me-2"></i>
+                        Demand Forecast
+                    </a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="#expiry">
+                        <i class="bi bi-calendar2-week me-2"></i>
+                        Expiration Alerts
+                    </a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="#reorder">
+                        <i class="bi bi-cart-check me-2"></i>
+                        Reorder Guide
+                    </a>
+                </li>
+
+            </ul>
+
+            <a href="../index.html" class="nav-link mt-5">
+                <i class="bi bi-box-arrow-left me-2"></i>
+                Back to Home
+            </a>
+
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="col-lg-10 p-0">
+
+            <nav class="navbar bg-white shadow-sm px-4">
+
+                <button class="btn btn-outline-secondary d-lg-none"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#mobile">
+
+                    <i class="bi bi-list"></i>
+
+                </button>
+
+                <span class="fw-semibold">
+                    Inventory Workspace
+                </span>
+
+                <span class="ms-auto text-muted small">
+                    <i class="bi bi-circle-fill text-success me-1"></i>
+                    Demo Workspace
+                </span>
+
+            </nav>
+
+            <div class="p-3 p-md-4">
+
+                <!-- OVERVIEW -->
+                <section id="overview">
+
+                    <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+
+                        <div>
+                            <h3 class="fw-bold mb-1">
+                                Inventory Overview
+                            </h3>
+
+                            <p class="text-muted mb-0">
+                                A quick look at your store's inventory health.
+                            </p>
+                        </div>
+
+                        <button class="btn btn-brand mt-3 mt-md-0"
+                                data-bs-toggle="modal"
+                                data-bs-target="#addProduct">
+
+                            <i class="bi bi-plus-lg me-1"></i>
+                            Add Product
+
+                        </button>
+
+                    </div>
+
+                    <div class="row g-3 mb-4">
+
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="card stat-card">
+                                <div class="card-body">
+
+                                    <div class="text-muted small">
+                                        Total Products
+                                    </div>
+
+                                    <div class="fs-2 fw-bold" id="totalProducts">
+                                        6
+                                    </div>
+
+                                    <i class="bi bi-box-seam text-brand"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="card stat-card">
+                                <div class="card-body">
+
+                                    <div class="text-muted small">
+                                        Units in Stock
+                                    </div>
+
+                                    <div class="fs-2 fw-bold" id="totalStock">
+                                        284
+                                    </div>
+
+                                    <i class="bi bi-stack text-primary"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="card stat-card">
+                                <div class="card-body">
+
+                                    <div class="text-muted small">
+                                        Low Stock Items
+                                    </div>
+
+                                    <div class="fs-2 fw-bold" id="lowStock">
+                                        2
+                                    </div>
+
+                                    <i class="bi bi-exclamation-triangle text-warning"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="card stat-card">
+                                <div class="card-body">
+
+                                    <div class="text-muted small">
+                                        Near Expiration
+                                    </div>
+
+                                    <div class="fs-2 fw-bold" id="nearExpiry">
+                                        2
+                                    </div>
+
+                                    <i class="bi bi-calendar2-x text-danger"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- PRODUCT INVENTORY -->
+                <section id="products"
+                         class="card border-0 shadow-sm mb-4">
+
+                    <div class="card-header bg-white py-3 d-flex justify-content-between">
+
+                        <h5 class="mb-0 fw-bold">
+                            Product Inventory
+                        </h5>
+
+                        <span class="small text-muted">
+                            Editable sample data
+                        </span>
+
+                    </div>
+
+                    <div class="table-responsive">
+
+                        <table class="table table-hover align-middle mb-0">
+
+                            <thead class="table-light">
+
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Category</th>
+                                    <th>Stock</th>
+                                    <th>Reorder Level</th>
+                                    <th>Expiration</th>
+                                    <th>Status</th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody id="productRows"></tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+                <!-- SALES AND FORECAST -->
+                <div class="row g-4">
+
+                    <!-- SALES -->
+                    <div class="col-xl-6" id="sales">
+
+                        <div class="card border-0 shadow-sm h-100">
+
+                            <div class="card-header bg-white py-3">
+
+                                <h5 class="fw-bold mb-0">
+                                    Record a Sale
+                                </h5>
+
+                            </div>
+
+                            <div class="card-body">
+
+                                <form id="saleForm" class="row g-2">
+
+                                    <div class="col-md-6">
+
+                                        <label class="form-label">
+                                            Product
+                                        </label>
+
+                                        <select id="saleProduct"
+                                                class="form-select"
+                                                required>
+                                        </select>
+
+                                    </div>
+
+                                    <div class="col-md-3">
+
+                                        <label class="form-label">
+                                            Quantity
+                                        </label>
+
+                                        <input id="saleQty"
+                                               type="number"
+                                               min="1"
+                                               value="1"
+                                               class="form-control"
+                                               required>
+
+                                    </div>
+
+                                    <div class="col-md-3 d-flex align-items-end">
+
+                                        <button class="btn btn-brand w-100">
+                                            Save Sale
+                                        </button>
+
+                                    </div>
+
+                                </form>
+
+                                <p class="small text-muted mt-3 mb-0">
+                                    Recording a sale automatically updates
+                                    the available stock in this demo.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- FORECAST -->
+                    <div class="col-xl-6" id="forecast">
+
+                        <div class="card border-0 shadow-sm h-100">
+
+                            <div class="card-header bg-white py-3">
+
+                                <h5 class="fw-bold mb-0">
+                                    Demand Forecast
+                                </h5>
+
+                            </div>
+
+                            <div class="card-body">
+
+                                <p class="text-muted small">
+                                    Estimated product demand based on
+                                    historical sales data.
+                                </p>
+
+                                <div id="forecastList"></div>
+
+                                <span class="badge text-bg-info mt-2">
+                                    Linear Regression Model
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- EXPIRATION AND REORDER -->
+                <div class="row g-4 mt-1">
+
+                    <div class="col-xl-6" id="expiry">
+
+                        <div class="card border-0 shadow-sm h-100">
+
+                            <div class="card-header bg-white py-3">
+
+                                <h5 class="fw-bold mb-0">
+                                    Expiration Monitoring
+                                </h5>
+
+                            </div>
+
+                            <div class="card-body" id="expiryList"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-6" id="reorder">
+
+                        <div class="card border-0 shadow-sm h-100">
+
+                            <div class="card-header bg-white py-3">
+
+                                <h5 class="fw-bold mb-0">
+                                    Reorder Recommendations
+                                </h5>
+
+                            </div>
+
+                            <div class="card-body" id="reorderList"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
-            <div class="card-footer bg-white border-0 pb-3"><a href="#" class="btn btn-outline-primary btn-sm">View Course</a></div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 border-0 shadow-sm card-hover">
-            <img src="assets/images/classroom.jpg" class="card-img-top" alt="Classroom">
-            <div class="card-body">
-              <span class="badge bg-brand mb-2">Project</span>
-              <h5 class="card-title">Build a Portfolio</h5>
-              <p class="card-text text-muted">Put it all together in a real project.</p>
+
+        </main>
+
+    </div>
+</div>
+
+<!-- MOBILE SIDEBAR -->
+<div class="offcanvas offcanvas-start text-bg-dark" id="mobile">
+
+    <div class="offcanvas-header">
+
+        <h5>StockWise</h5>
+
+        <button class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas">
+        </button>
+
+    </div>
+
+    <div class="offcanvas-body">
+
+        <a class="nav-link text-white" href="#overview">Overview</a>
+        <a class="nav-link text-white" href="#products">Products</a>
+        <a class="nav-link text-white" href="#sales">Sales Records</a>
+        <a class="nav-link text-white" href="#forecast">Demand Forecast</a>
+        <a class="nav-link text-white" href="#expiry">Expiration Alerts</a>
+        <a class="nav-link text-white" href="#reorder">Reorder Guide</a>
+
+    </div>
+
+</div>
+
+<!-- ADD PRODUCT MODAL -->
+<div class="modal fade" id="addProduct" tabindex="-1">
+
+    <div class="modal-dialog">
+
+        <form class="modal-content" id="productForm">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    Add Product
+                </h5>
+
+                <button class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+
             </div>
-            <div class="card-footer bg-white border-0 pb-3"><a href="#" class="btn btn-outline-primary btn-sm">View Course</a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Contact -->
-  <section id="contact" class="py-5 bg-white">
-    <div class="container py-4">
-      <div class="row justify-content-center">
-        <div class="col-lg-6">
-          <h2 class="fw-bold text-center mb-4">Contact Us</h2>
-          <form>
-            <div class="mb-3"><label class="form-label" for="cname">Name</label><input type="text" id="cname" class="form-control" placeholder="Your name"></div>
-            <div class="mb-3"><label class="form-label" for="cemail">Email</label><input type="email" id="cemail" class="form-control" placeholder="name@example.com"></div>
-            <div class="mb-3"><label class="form-label" for="cmsg">Message</label><textarea id="cmsg" class="form-control" rows="4"></textarea></div>
-            <button type="button" class="btn btn-brand w-100">Send Message</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
+            <div class="modal-body">
 
-  <!-- Footer -->
-  <footer class="bg-dark text-light py-4">
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
-      <span>&copy; 2026 EduBoost. For learning purposes.</span>
-      <div class="d-flex gap-3 fs-5">
-        <a href="#" class="text-light" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="text-light" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="text-light" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-      </div>
-    </div>
-  </footer>
+                <label class="form-label">
+                    Product Name
+                </label>
 
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
+                <input id="pName"
+                       class="form-control mb-2"
+                       required>
+
+                <label class="form-label">
+                    Category
+                </label>
+
+                <input id="pCategory"
+                       class="form-control mb-2"
+                       required>
+
+                <div class="row">
+
+                    <div class="col">
+
+                        <label class="form-label">
+                            Current Stock
+                        </label>
+
+                        <input id="pStock"
+                               type="number"
+                               min="0"
+                               class="form-control"
+                               required>
+
+                    </div>
+
+                    <div class="col">
+
+                        <label class="form-label">
+                            Reorder Level
+                        </label>
+
+                        <input id="pLevel"
+                               type="number"
+                               min="0"
+                               class="form-control"
+                               required>
+
+                    </div>
+
+                </div>
+
+                <label class="form-label mt-2">
+                    Expiration Date
+                </label>
+
+                <input id="pExpiry"
+                       type="date"
+                       class="form-control">
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="button"
+                        class="btn btn-light"
+                        data-bs-dismiss="modal">
+                    Cancel
+                </button>
+
+                <button class="btn btn-brand">
+                    Save Product
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/stockwise.js"></script>
+
 </body>
 </html>
